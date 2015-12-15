@@ -5,7 +5,7 @@
  * http://www.sencha.com/license
  */
 
-Ext.define('Desktop.Settings', {
+Ext.define('app.desktop.Settings', {
     extend: 'Ext.window.Window',
 
     uses: [
@@ -17,7 +17,7 @@ Ext.define('Desktop.Settings', {
 
         'Ext.ux.desktop.Wallpaper',
 
-        'Desktop.model.Wallpaper'
+        'app.desktop.model.Wallpaper'
     ],
 
     layout: 'anchor',

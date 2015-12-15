@@ -5,7 +5,7 @@
 * http://www.sencha.com/license
 */
 
-Ext.define('Desktop.BogusMenuModule', {
+Ext.define('app.desktop.BogusMenuModule', {
     extend: 'Desktop.BogusModule',
 
     init : function() {

@@ -1,4 +1,4 @@
-Ext.define('Desktop.model.Wallpaper', {
+Ext.define('app.model.Wallpaper', {
     extend: 'Ext.data.TreeModel',
     fields: [
         { name: 'text' },

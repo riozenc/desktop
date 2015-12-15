@@ -5,7 +5,7 @@
  * http://www.sencha.com/license
  */
 
-Ext.define('Desktop.TabWindow', {
+Ext.define('app.desktop.TabWindow', {
     extend: 'Ext.ux.desktop.Module',
 
     requires: [

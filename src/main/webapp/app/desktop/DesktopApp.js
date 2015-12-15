@@ -5,7 +5,7 @@
  * http://www.sencha.com/license
  */
 
-Ext.define('Desktop.App', {
+Ext.define('app.desktop.DesktopApp', {
     extend: 'Ext.ux.desktop.App',
 
     requires: [
@@ -13,17 +13,17 @@ Ext.define('Desktop.App', {
 
         'Ext.ux.desktop.ShortcutModel',
 
-        'Desktop.SystemStatus',
-        'Desktop.VideoWindow',
-        'Desktop.GridWindow',
-        'Desktop.TabWindow',
-        'Desktop.AccordionWindow',
-        'Desktop.Notepad',
-        'Desktop.BogusMenuModule',
-        'Desktop.BogusModule',
+        'app.desktop.SystemStatus',
+        'app.desktop.VideoWindow',
+        'app.desktop.GridWindow',
+        'app.desktop.TabWindow',
+        'app.desktop.AccordionWindow',
+        'app.desktop.Notepad',
+        'app.desktop.BogusMenuModule',
+        'app.desktop.BogusModule',
 
-//        'Desktop.Blockalanche',
-        'Desktop.Settings'
+//        'app.desktop.Blockalanche',
+        'app.desktop.Settings'
     ],
 
     init: function() {
@@ -36,15 +36,15 @@ Ext.define('Desktop.App', {
 
     getModules : function(){
         return [
-            new Desktop.VideoWindow(),
-            //new Desktop.Blockalanche(),
-            new Desktop.SystemStatus(),
-            new Desktop.GridWindow(),
-            new Desktop.TabWindow(),
-            new Desktop.AccordionWindow(),
-            new Desktop.Notepad(),
-            new Desktop.BogusMenuModule(),
-            new Desktop.BogusModule()
+            new app.desktop.VideoWindow(),
+            //new app.desktop.Blockalanche(),
+            new app.desktop.SystemStatus(),
+            new app.desktop.GridWindow(),
+            new app.desktop.TabWindow(),
+            new app.desktop.AccordionWindow(),
+            new app.desktop.Notepad(),
+            new app.desktop.BogusMenuModule(),
+            new app.desktop.BogusModule()
         ];
     },
 

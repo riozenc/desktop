@@ -5,7 +5,7 @@
  * http://www.sencha.com/license
  */
 
-Ext.define('Desktop.GridWindow', {
+Ext.define('app.desktop.GridWindow', {
     extend: 'Ext.ux.desktop.Module',
 
     requires: [

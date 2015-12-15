@@ -4,7 +4,7 @@
  * Sencha Cmd when upgrading.
  */
 Ext.application({
-    name: 'Desktop',
+    name: 'app',
 
     //-------------------------------------------------------------------------
     // Most customizations should be made to Desktop.Application. If you need to
@@ -13,9 +13,9 @@ Ext.application({
     //-------------------------------------------------------------------------
 
     requires: [
-        'Desktop.App'
+        'app.desktop.DesktopApp'
     ],
     init: function() {
-        var app = new Desktop.App();
+        var app = new app.desktop.DesktopApp();
     }
 });
