@@ -6,7 +6,7 @@
 */
 
 Ext.define('app.desktop.BogusMenuModule', {
-    extend: 'Desktop.BogusModule',
+    extend: 'app.desktop.BogusModule',
 
     init : function() {
 

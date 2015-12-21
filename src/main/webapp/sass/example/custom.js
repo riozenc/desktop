@@ -4,7 +4,7 @@
  * 
  * This file can be removed and the script tag in theme.html removed if this theme does
  * not need custom additional manifest or shortcut entries. These are documented in
- * ./packages/theme-base/sass/example/render.js.
+ * ./packages/ext-theme-base/sass/example/render.js.
  */
 
 //Ext.theme.addManifest();

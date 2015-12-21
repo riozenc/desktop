@@ -28,9 +28,9 @@ Ext.define('app.desktop.DesktopApp', {
 
     init: function() {
         // custom logic before getXYZ methods get called...
-
-        this.callParent();
-
+    	alert("1");
+//        this.callParent();
+        Ext.QuickTips.init();
         // now ready...
     },
 
@@ -61,10 +61,10 @@ Ext.define('app.desktop.DesktopApp', {
             shortcuts: Ext.create('Ext.data.Store', {
                 model: 'Ext.ux.desktop.ShortcutModel',
                 data: [
-                    { name: 'Grid Window', iconCls: 'grid-shortcut', module: 'grid-win' },
-                    { name: 'Accordion Window', iconCls: 'accordion-shortcut', module: 'acc-win' },
-                    { name: 'Notepad', iconCls: 'notepad-shortcut', module: 'notepad' },
-                    { name: 'System Status', iconCls: 'cpu-shortcut', module: 'systemstatus'}
+//                    { name: 'Grid Window', iconCls: 'grid-shortcut', module: 'grid-win' },
+//                    { name: 'Accordion Window', iconCls: 'accordion-shortcut', module: 'acc-win' },
+//                    { name: 'Notepad', iconCls: 'notepad-shortcut', module: 'notepad' },
+//                    { name: 'System Status', iconCls: 'cpu-shortcut', module: 'systemstatus'}
                 ]
             }),
 
@@ -107,8 +107,8 @@ Ext.define('app.desktop.DesktopApp', {
 
         return Ext.apply(ret, {
             quickStart: [
-                { name: 'Accordion Window', iconCls: 'accordion', module: 'acc-win' },
-                { name: 'Grid Window', iconCls: 'icon-grid', module: 'grid-win' }
+//                { name: 'Accordion Window', iconCls: 'accordion', module: 'acc-win' },
+//                { name: 'Grid Window', iconCls: 'icon-grid', module: 'grid-win' }
             ],
             trayItems: [
                 { xtype: 'trayclock', flex: 1 }
@@ -121,7 +121,7 @@ Ext.define('app.desktop.DesktopApp', {
     },
 
     onSettings: function () {
-        var dlg = new Desktop.Settings({
+        var dlg = new app.desktop.Settings({
             desktop: this.desktop
         });
         dlg.show();
