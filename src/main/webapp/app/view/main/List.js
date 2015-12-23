@@ -2,7 +2,7 @@
  * This view is an example list of people.
  */
 Ext.define('app.view.main.List', {
-    extend: 'Ext.grid.Grid',
+    extend: 'Ext.grid.GridPanel',
     xtype: 'mainlist',
 
     requires: [
